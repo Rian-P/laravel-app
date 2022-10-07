@@ -35,14 +35,14 @@
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/favicon-esteh.ico">
 		<!-- Main style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 		<!-- responsive style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">
-		<link rel="stylesheet" type="text/css" href="css/esteh.css">
-		<!-- <link rel="stylesheet" type="text/css" href="{{ asset ('css/responsive.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ asset ('css/esteh.css') }}"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="css/esteh.css"> -->
+		<link rel="stylesheet" type="text/css" href="{{ asset ('css/responsive.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset ('css/esteh.css') }}">
 
 		<!-- Fix Internet Explorer ______________________________________-->
 		<!--[if lt IE 9]>
