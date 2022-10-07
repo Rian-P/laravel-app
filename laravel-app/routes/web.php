@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\landing\PortofolioController;
+use App\http\Controllers\landing\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/portofolio', [PortofolioController::class, 'index'])->name('portofolio.index');
+Route::get('/about', [AboutController::class, 'index'])->name('about.index');
