@@ -18,6 +18,7 @@ use App\Http\Controllers\landing\LoginController;
 |
 */
 
+
 Route::get('/', [AuthController::class, 'home'])->name('home');
 Route::get('/career', [CareerController::class, 'cereer'])->name('cerrer');
 Route::get('/login', [LoginController::class, 'login'])->name('login');

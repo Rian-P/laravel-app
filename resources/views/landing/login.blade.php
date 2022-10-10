@@ -7,7 +7,7 @@
       </head>
       <body class="bg-blue-500 md:bg-green-500">
 
-      <section class="bg-blueGray-50">
+      <section action="{{route('}}" class="bg-blueGray-50">
             <div class="w-full lg:w-4/12 mx-auto pt-32">
                   <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
                         <div class="rounded-t mb-0 px-6 py-6">
