@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\http\Controllers\landing\BlogController;
+use App\http\Controllers\landing\TeamController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/team', [TeamController::class, 'index'])->name('team.index');
