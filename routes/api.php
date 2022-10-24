@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\landing\BlogController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('get-blog', [BlogController::class, 'index']);
+Route::post('get-blog', [BlogController::class, 'store']);
+Route::post('get-blog/{id}', [BlogController::class, 'update']);
+Route::delete('get-blog/{id}', [BlogController::class, 'destroy']);

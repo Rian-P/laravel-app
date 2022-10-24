@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perusahaan</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="css/esteh.css">
+
     <style>
         .dropdown:hover .dropdown-menu {
             display: block;
@@ -24,7 +29,7 @@
 
     <main>@yield('content')</main>
 
-    <footer class=" bg-primary text-black-100 body-font">
+    <footer class=" body-font">
         @include('landing.layouts.includes.footer')
     </footer>
 
