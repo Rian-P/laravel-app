@@ -85,6 +85,7 @@
 						<p class="banner-sub-title pb-45 md-pb-30 wow fadeInUp animated" data-wow-delay="0.9s"> Kami menghadirkan solusi teknologi yang komprehensif<br> untuk mengembangkan bisnis Anda.</p>
 						<a href="#" class="theme-btn solid-button-one wow fadeInLeft animated scroll-more" data-wow-delay="1.5s">Lebih Lengkap</a>
 						<a href="contact.html" class="theme-btn line-button-one wow fadeInRight animated" data-wow-delay="1.5s">Hubungi Kami</a>
+                  </ul>
 					</div> <!-- /.main-wrapper -->
 				</div> <!-- /.container -->
 			</div> <!-- /.rogan-hero-section -->
