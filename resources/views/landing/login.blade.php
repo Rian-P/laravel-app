@@ -129,7 +129,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
                 <hr>
-                <p class="text-center">Belum punya akun? <a href="#">Register</a> sekarang!</p>
             </form>
         </div>
     </div>

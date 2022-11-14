@@ -6,7 +6,7 @@ use App\Http\Controllers\landing\CareerController;
 use App\Http\Controllers\landing\LoginController;
 use App\Http\Controllers\landing\dashboardController;
 use App\Http\Controllers\SessionController;
-use App\Http\Controllers\landing\RegisterController;
+use App\Http\Controllers\RegisterController;
 
 
 

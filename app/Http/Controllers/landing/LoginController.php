@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use GuzzleHttp\Client;
 use App\Http\Controllers\Controller;
+use Session;
+
 class LoginController extends Controller
 {
     public function login()
