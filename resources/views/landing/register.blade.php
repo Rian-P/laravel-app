@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register User</title>
+    <meta name="description" content="Esteh Creative, Innovating Technology to Deliver Happiness.">
+	<meta name='og:image' content='images/home/ogg.png'>
+    <title>Esteh Creative - Innovating Technology to Deliver Happiness</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/favicon-esteh.ico">
+    <!-- Main style sheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <!-- responsive style sheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/esteh.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset ('css/responsive.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('css/esteh.css') }}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
