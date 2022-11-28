@@ -22,6 +22,6 @@ class blog extends Model
 
     public function getFromDateAttribute() {
         return Carbon::parse($this->attributes['created_at'])
-        ->translatedFormat('d-m-Y');
+        ->translatedFormat('1, d  F Y');
     }
 }

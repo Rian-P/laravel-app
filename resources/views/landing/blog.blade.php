@@ -141,65 +141,72 @@
 						<li data-filter=".technology"><span>Technology</span></li>
 					</ul>
 
-
 					<div class="masnory-blog-wrapper">
 						<div class="grid-sizer"></div>
+						@foreach($blog as $item)
 						<div class="isotop-item economy marketing">
 							<div class="blog-post-block-two mb-75 md-mb-50">
-								<div class="img-holder"><img src="images/blog/23.jpg" alt=""></div>
+								<div class="img-holder"><img src="{{ $item->image }}" alt=""></div>
 								<div class="post">
 									<ul class="post-info">
-										<li><a href="#">Graphics Design .</a></li>
-										<li><a href="#">23 July, 2018</a></li>
+										<li><a href="#">{{ $item->jobs }}.</a></li>
+										<li><a href="#">{{ $item->date }}</a></li>
 									</ul>
-									<h4><a href="blog-detail.html">Challange yourself & win the future.</a></h4>
-									<p>This response is important for our ability to learn from mistakes words…</p>
-									<a href="blog-detail.html" class="read-more inline-button-one">Continue Reading</a>
+									<h4><a href="{{ route('blogdetail.index') }}">{{ $item->title }}</a></h4>
+									<p>{{ $item->description }}</p>
+									<a href="{{ route('blogdetail.index') }}" class="read-more inline-button-one">Continue Reading</a>
 								</div> <!-- /.post -->
 							</div> <!-- /.blog-post-block-two -->
 						</div> <!-- /.isotop-item -->
+						@endforeach
+						@foreach($blog as $item)
 						<div class="isotop-item economy">
 							<div class="blog-post-block-two mb-75 md-mb-50">
 								<div class="img-holder"><img src="images/blog/24.jpg" alt=""></div>
 								<div class="post">
-									<ul class="post-info">
-										<li><a href="#">Graphics Design .</a></li>
-										<li><a href="#">23 July, 2018</a></li>
+								<ul class="post-info">
+										<li><a href="#">{{ $item->jobs }}.</a></li>
+										<li><a href="#">{{ $item->date }}</a></li>
 									</ul>
-									<h4><a href="blog-detail.html">Challange yourself & win the future.</a></h4>
-									<p>This response is important for our ability to learn from mistakes words…</p>
-									<a href="blog-detail.html" class="read-more inline-button-one">Continue Reading</a>
+									<h4><a href="{{ route('blogdetail.index') }}">{{ $item->title }}</a></h4>
+									<p>{{ $item->description }}</p>
+									<a href="{{ route('blogdetail.index') }}" class="read-more inline-button-one">Continue Reading</a>
 								</div> <!-- /.post -->
 							</div> <!-- /.blog-post-block-two -->
 						</div> <!-- /.isotop-item -->
+						@endforeach
+						@foreach($blog as $item)
 						<div class="isotop-item travel marketing">
 							<div class="blog-post-block-two mb-75 md-mb-50">
 								<div class="img-holder"><img src="images/blog/25.jpg" alt=""></div>
 								<div class="post">
-									<ul class="post-info">
-										<li><a href="#">Graphics Design .</a></li>
-										<li><a href="#">23 July, 2018</a></li>
+								<ul class="post-info">
+										<li><a href="#">{{ $item->jobs }}.</a></li>
+										<li><a href="#">{{ $item->date }}</a></li>
 									</ul>
-									<h4><a href="blog-detail.html">Challange yourself & win the future.</a></h4>
-									<p>This response is important for our ability to learn from mistakes words…</p>
-									<a href="blog-detail.html" class="read-more inline-button-one">Continue Reading</a>
+									<h4><a href="{{ route('blogdetail.index') }}">{{ $item->title }}</a></h4>
+									<p>{{ $item->description }}</p>
+									<a href="{{ route('blogdetail.index') }}" class="read-more inline-button-one">Continue Reading</a>
 								</div> <!-- /.post -->
 							</div> <!-- /.blog-post-block-two -->
 						</div> <!-- /.isotop-item -->
+						@endforeach
+						@foreach($blog as $item)
 						<div class="isotop-item travel economy technology">
 							<div class="blog-post-block-two mb-75 md-mb-50">
 								<div class="img-holder"><img src="images/blog/26.jpg" alt=""></div>
 								<div class="post">
-									<ul class="post-info">
-										<li><a href="#">Graphics Design .</a></li>
-										<li><a href="#">23 July, 2018</a></li>
+								<ul class="post-info">
+										<li><a href="#">{{ $item->jobs }}.</a></li>
+										<li><a href="#">{{ $item->date }}</a></li>
 									</ul>
-									<h4><a href="blog-detail.html">Challange yourself & win the future.</a></h4>
-									<p>This response is important for our ability to learn from mistakes words…</p>
-									<a href="blog-detail.html" class="read-more inline-button-one">Continue Reading</a>
+									<h4><a href="{{ route('blogdetail.index') }}">{{ $item->title }}</a></h4>
+									<p>{{ $item->description }}</p>
+									<a href="{{ route('blogdetail.index') }}" class="read-more inline-button-one">Continue Reading</a>
 								</div> <!-- /.post -->
 							</div> <!-- /.blog-post-block-two -->
 						</div> <!-- /.isotop-item -->
+						@endforeach
 						<div class="isotop-item economy marketing">
 							<div class="blog-post-block-two mb-75 md-mb-50">
 								<div class="img-holder"><img src="images/blog/27.jpg" alt=""></div>
@@ -272,6 +279,8 @@
 						</div> <!-- /.isotop-item -->
 					</div> <!-- /.masnory-blog-wrapper -->
 
+			
+					
 					<div class="theme-pagination-one pt-15 text-center">
 						<ul>
 							<li class="active"><a href="#">1</a></li>
