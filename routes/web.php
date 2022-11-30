@@ -7,6 +7,8 @@ use App\Http\Controllers\landing\LoginController;
 use App\Http\Controllers\landing\dashboardController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PostController;
+
 
 
 
@@ -43,3 +45,6 @@ Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('acti
 Route::get('register', [RegisterController::class, 'register'])->name('register');
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 
+//data//
+//route resource
+Route::get('/lihat', [PostController::class, 'index'])->name('users');
