@@ -8,6 +8,8 @@ use App\Http\Controllers\landing\dashboardController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\EstehTimController;
+
 
 
 
@@ -48,3 +50,13 @@ Route::post('register/action', [RegisterController::class, 'actionregister'])->n
 //data//
 //route resource
 Route::get('/lihat', [PostController::class, 'index'])->name('users');
+Route::get('/lihat/hapus/{id_user}', [PostController::class, 'hapus'])->name('hapus.index');
+Route::get('/lihat/edit/{id_user}', [PostController::class, 'ubahusers'])->name('ubahusers');
+Route::post('/lihat/update', [PostController::class, 'updateusers'])->name('updateusers');
+
+
+//Team
+Route::get('/team', [EstehTimController::class, 'index'])->name('team');
+Route::post('/insertTeam', [EstehTimController::class, 'store']);
+Route::get('/viewTeam', [EstehTimController::class, 'show']);
+Route::get('/delete/{id}', [EstehTimController::class, 'destroy'])->name('destroy');

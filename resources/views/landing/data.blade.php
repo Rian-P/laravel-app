@@ -36,15 +36,15 @@
                                     <td>{{ $user->password}}</td>
                                     <td>{{ $user->role}}</td>
                                     <td>{{ $user->email}}</td>
-                                    <td class="text-center">
-                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
-                                            <a href="" class="btn btn-sm btn-primary">EDIT</a>
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                        </form>
-                                    </td>
-                                </tr>
+                                    <td>
+                                    <a href="/lihat/edit/{{$user->id_user}}" 
+                                        class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i>edit</a>
+
+                                    <a href="/lihat/hapus/{{$user->id_user}}" 
+                                        onclick="return confirm('Apakah Anda Yakin Menghapus Data?');" 
+                                        class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>hapus</a>
+                                  </td>
+                                 </tr>
                                 @empty
                                 @endforelse
                             </table>
