@@ -9,6 +9,7 @@ use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\EstehTimController;
+use App\Http\Controllers\PortfolioTim;
 
 
 
@@ -59,4 +60,18 @@ Route::post('/lihat/update', [PostController::class, 'updateusers'])->name('upda
 Route::get('/team', [EstehTimController::class, 'index'])->name('team');
 Route::post('/insertTeam', [EstehTimController::class, 'store']);
 Route::get('/viewTeam', [EstehTimController::class, 'show']);
-Route::get('/delete/{id}', [EstehTimController::class, 'destroy'])->name('destroy');
+Route::get('/hapus/{id}', [EstehTimController::class, 'destroy'])->name('destroy');
+Route::get('/edit/{id}', [EstehTimController::class, 'edit'])->name('editteam');
+Route::post('/updateteam/{id}', [EstehTimController::class, 'update'])->name('updateteam');
+
+
+
+
+//Potofoliiio
+Route::get('/portfolio', [PortfolioTim::class, 'index'])->name('portfolio');
+Route::post('/insertPortfolio', [PortfolioTim::class, 'store']);
+Route::get('/viewportfolio', [PortfolioTim::class, 'show']);
+Route::get('/delete/{id}', [PortfolioTim::class, 'destroy'])->name('destroy');
+Route::get('/editportfolio/{id}', [PortfolioTim::class, 'edit'])->name('editportfolio');
+Route::post('/updateportfolio/{id}', [PortfolioTim::class, 'update'])->name('updateteam');
+

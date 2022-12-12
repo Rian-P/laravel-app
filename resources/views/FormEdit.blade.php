@@ -14,17 +14,17 @@
     
 
 <div class="container">
-    <form action="/insertTeam" method="post" enctype="multipart/form-data"  >
+    <form action="/updateteam/{{$data->id}}" method="post" enctype="multipart/form-data"  >
     {{ csrf_field() }}
     <div class="mb-3 mt-5">
         <h1>Form Tambah Portofolio</h1>
         <label for="exampleFormControlInput1" class="form-label">Nama</label>
-        <input type="text" class="form-control" name="nama" placeholder="Nama">
+        <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{$data->nama}}">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Pendidikan</label>
             <select class="form-select" aria-label="Default select example" name="pendidikan">
-                <option selected>Pilih Pendidikan</option>
+                <option selected>{{$data->pendidikan}}</option>
                 <option value="SMP">SMP</option>
                 <option value="SMA">SMA</option>
                 <option value="SMK">SMK</option>
@@ -34,7 +34,7 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Jabatan</label>
         <select class="form-select" aria-label="Default select example" name="jabatan">
-            <option selected>Pilih Jabatan</option>
+            <option selected>{{$data->jabatan}}</option>
             <option value="Chief Executive Officer">Chief Executive Officer</option>
             <option value="Chief Operating Officer">Chief Operating Officer</option>
             <option value="Chief Technology Officer">Chief Technology Officer</option>
@@ -54,7 +54,7 @@
             <option value="Videographer & Editing">Videographer & Editing</option>
           </select>
     </div>
-    <label for="exampleFormControlInput1" class="form-label">Image</label>
+    <label for="exampleFormControlInput1" class="form-label">{{$data->image}}</label>
     <input type="file" class="form-control" id="exampleFormControlInput1" name="image">
 
     <button type="submit" class="btn btn-success mt-4">Submit</button>

@@ -16,25 +16,21 @@
     <table class="table mt-5">
         <thead>
           <tr>
-            <th scope="col">Nama</th>
-            <th scope="col">Pendidikan</th>
-            <th scope="col">Jabatan</th>
-            <th scope="col">Image</th>
+            <th scope="col">Keterangan</th>
+            <th scope="col">Portfolio</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
-          @foreach($data as $row)
+          @foreach($portfolio as $row)
           <tr>
-            <th>{{$row->nama}}</th>
-            <td>{{$row->pendidikan}}</td>
-            <td>{{$row->jabatan}}</td>
-            <td><img src="{{asset('storage/image/team/'.$row->image)}}" alt="" style="width: 50px;"></td>
+            <td>{{$row->keterangan}}</td>
+            <td><img src="{{asset('storage/image/portfolio/'.$row->portfolio)}}" alt="" style="width: 50px;"></td>
             <td>
-            <a href="/edit/{{ $row->id }}" 
+            <a href="/editportfolio/{{ $row->id }}" 
                class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i>edit</a>
 
-              <a href="/hapus/{{$row->id}}" 
+              <a href="/delete/{{$row->id}}" 
                 onclick="return confirm('Apakah Anda Yakin Menghapus Data?');" 
                 class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>hapus</a>
             </td>
@@ -43,7 +39,7 @@
           @endforeach
         </tbody>
       </table>
-      <a href="/team">back to from</a>
+      <a href="/portfolio">back to from</a>
     </div>
 
     
